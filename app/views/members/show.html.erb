@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+<h1><%= @my_name %></h1>
+<p>
+  <strong>Name:</strong>
+  <%= @member.name %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%= @member.email %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @member.age %>
+</p>
+
+<p>
+  <strong>Sex:</strong>
+  <%= @member.sex %>
+</p>
+
+<%= link_to '수정', edit_member_path(@member) %> |
+<%= link_to '뒤로', members_path %>
